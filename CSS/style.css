@@ -47,6 +47,7 @@ body{
 .conteudo{
     height: 84.9vh;
     background-color:  rgb(29, 35, 41);
+    clear: both;
 }
 
 .title{
@@ -110,7 +111,7 @@ body{
     margin-bottom: 10px;
     /* border: solid 1px white; */
     background-color:  rgb(64, 70, 77);
-    border-radius: 10px;
+    border-radius: 10px;    
 }.card-left{
     /* border: white solid 1px; */
     width: 28%;
