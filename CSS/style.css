@@ -5,6 +5,7 @@ body{
 .container{
     width: 80%;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .navbar{
@@ -27,7 +28,12 @@ body{
     color: white;
 }
 
+/* FIM DA NAV BAR */
+
 #space{
+    height: 100px;
+}
+#space-title{
     height: 100px;
 }
 .btn{
@@ -43,10 +49,13 @@ body{
     font-family: Georgia, serif;
     text-decoration: none;
 }
+.btn:hover{
+    cursor: pointer;
+}
 
 .conteudo{
     height: 84.9vh;
-    background-color:  rgb(29, 35, 41);
+    background-color:rgb(29, 35, 41);
     clear: both;
 }
 
@@ -97,12 +106,12 @@ body{
     border-radius: 10px;
 }
 .linha-vertical {
-    height: 430px;
+    height: 405px;
     width: 2px;
     background-color: white;
     float: right;
     clear: both;
-    margin-top: -43%;
+    margin-top: -43.5%;
 }
 
 .card{
@@ -122,13 +131,57 @@ body{
 } .backg :hover{
     background-color:  rgb(75, 144, 224);
 }
+
+/* TITULO DOS CARDS*/
+
+.second-title h1{
+    font-weight: 500;
+    margin: 5px 0px -37px 191px;
+}
+
+/* PRIMEIRO CARD DE CONTEUDO */
+
 .materias{
     margin: 20px;
     padding: 20px;
     border-bottom: 1px solid black;
+    overflow: auto;
 }
 .materias img{
     border-radius: 20px;
     height: 100px;
     widows: 50px;
+    float: left;
+}
+.materias h1{
+    color: black;
+    font-weight: 500;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+.materias a{
+    text-decoration-line: none;
+    color: black;
+}
+.materias h1 a:hover{
+    color: rgba(40,120,189);
+}
+.materias p{
+    float: left;
+    margin: 0px 0px 0px 30px;
+}
+/* FIM DAS NOTICIAS */
+
+/*FOOTER*/
+
+.footer{
+    background-color: rgb(29, 35, 41);;
+    height: 15vh;
+    width: 100%; 
+    color: white;
+    text-align: center;
+}
+.cont-footer{
+    padding: 20px;
 }
