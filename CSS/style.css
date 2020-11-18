@@ -195,7 +195,7 @@ body{
 
 .cardGames{
     /* width: 100%; */
-    margin-left: 9%;
+    /* margin-left: 9%; */
     margin-top: 45px;
     display: flex;
     /* margin: 0 auto; */
@@ -203,6 +203,7 @@ body{
 
 .cardGames div {
     height: 65vh;
+    width: 50%;
     border-radius: 15px;
     /* background-color: violet; */
     margin: 15px 20px 0px 20px;
