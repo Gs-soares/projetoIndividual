@@ -185,3 +185,58 @@ body{
 .cont-footer{
     padding: 20px;
 }
+
+/* PAGINA GAMES*/
+
+.conteudoGames{
+    /* background-color: aquamarine; */
+    height: 84.9vh;
+}
+
+.cardGames{
+    /* width: 100%; */
+    margin-left: 9%;
+    margin-top: 45px;
+    display: flex;
+    /* margin: 0 auto; */
+}
+
+.cardGames div {
+    height: 65vh;
+    border-radius: 15px;
+    /* background-color: violet; */
+    margin: 15px 20px 0px 20px;
+    border: 2px solid black;
+}
+
+.cardGames div h1 {
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-top: -16.5px;
+    padding: 30px;
+    background-color: rgb(64, 70, 77);
+    border-radius: 11px 11px 0px 0px;
+}
+
+.cardGames div img{
+    height: 100px;
+    padding: 40px;
+}
+
+.btnGames{
+    border-top: 1px solid #4b4b4b;
+    background: rgb(64, 70, 77);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-decoration: none;    
+}
+
+.btnGames:hover{
+    cursor: pointer;
+}
