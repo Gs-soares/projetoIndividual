@@ -7,6 +7,7 @@
     <title>Games</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <script type="text/javascript" src="../JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,10 +15,11 @@
         <div class="menu container">
             <ul>
                 <li><a href="projeto.html">Home</a></li>
-                <li><a href="#space">Notícias</a></li>
+                <li><a href="projeto.html#space-title">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
-                <li style="margin-left: 500px;"><a onclick="verificar()" href="#">Login</a></li>
+                <li style="margin-left: 400px;"><a onclick="verificar()" href="#">Cadastro</a></li>
+                <li><a onclick="verificar()" href="#">Login</a></li>
             </ul>
         </div>
     </header>
@@ -28,31 +30,31 @@
         <center>
             <div class="cardGames">
                 <div>
-                    <p><h1>PC</h1></p>
-                    <img src="https://image.flaticon.com/icons/png/512/23/23700.png">
+                    <p>
+                    <h1>PC</h1>
+                    </p>
+                    <img src="../IMG/windows.png">
                     <p>As mais novas noticias sobre os <br> games para PC</p>
                     <button onclick="openModal()" class="btnGames">Ver mais</button>
                 </div>
                 <div>
-                    <p><h1>PlayStation</h1></p>
-                    <img src="https://image.freepik.com/free-icon/playstation-logo_318-10089.jpg">
+                    <p>
+                    <h1>PlayStation</h1>
+                    </p>
+                    <img src="../IMG/play.png">
                     <p>As mais novas noticias sobre os <br> games para PlayStation</p>
                     <button onclick="openModal()" class="btnGames">Ver mais</button>
                 </div>
                 <div>
-                    <p><h1>Xbox</h1></p>
-                    <img src="https://i.pinimg.com/originals/73/f1/7b/73f17b6ddccc580c917411240d98d464.png">
+                    <p>
+                    <h1>Xbox</h1>
+                    </p>
+                    <img src="../IMG/xbox.png">
                     <p>As mais novas noticias sobre os <br> games para Xbox</p>
                     <button onclick="openModal()" class="btnGames">Ver mais</button>
                 </div>
             </div>
         </center>
-    </section>
-
-    <section id="loginGames" class="modal">
-        <div>
-
-        </div>
     </section>
 
     <section id="rodape" class="footer">
@@ -61,5 +63,19 @@
         </div>
     </section>
 </body>
+
+<section style="height: 0;" id="loginGames" class="modal">
+    <div>
+        <center><i style="margin-top: 30px;" class="far fa-user fa-5x"></i></center>
+        
+        <form action="">
+            <h3 style="font-weight: 100;">Login:</h3> <br><input type="text"><br>
+            <h3 style="font-weight: 100;">Email:</h3> <br><input type="email"><br>
+            <h3 style="font-weight: 100;">Senha:</h3> <br><input type="password"><br>
+            <button id="entrar" type="submit">Login</button>
+        </form>
+
+    </div>
+</section>
 
 </html>

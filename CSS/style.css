@@ -241,3 +241,37 @@ body{
 .btnGames:hover{
     cursor: pointer;
 }
+
+.modal{
+    color: white;
+}
+
+#loginModal{
+    width: 100%;
+}
+
+.modal div{
+    width: 100%;
+}
+
+.modal form{
+    /* margin: 30px; */
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.modal form h3{
+    margin: 0px;
+}
+
+.modal form input{
+    /* padding: 8px; */
+    margin: 25px 0px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0px 0px 20px 0px;
+    color: white;
+    width: 300px;
+}

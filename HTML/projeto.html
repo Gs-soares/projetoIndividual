@@ -7,6 +7,7 @@
     <title>Index</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <script type="text/javascript" src="../JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,7 +18,8 @@
                 <li><a href="#space-title">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
-                <li style="margin-left: 500px;"><a onclick="verificar()" href="#">Login</a></li>
+                <li style="margin-left: 400px;"><a onclick="verificar()" href="#">Cadastro</a></li>
+                <li><a onclick="verificar()" href="#">Login</a></li>
             </ul>
         </div>
     </header>
@@ -68,7 +70,7 @@
             clear: both;
             text-align: center;
             margin-top: -6%;">
-                <button class="btn">Saiba mais</button>
+                <button onclick="openModal()" class="btn">Saiba mais</button>
             </div>
         </section>
     </section>
@@ -113,6 +115,25 @@
                 <br><br><br>
                 <p>06/11/2020</p>
             </div>
+        </div>
+    </section>
+
+    <section style="height: 0;" id="loginGames" class="modal">
+        <div id="formulario" style="display: none;">
+            <button style="background: none; border: none; padding: 10px 20px;" onclick="closeModal()">
+                <h1 style="color: white; font-weight: 400;">X</h1>
+            </button>
+
+            <div id="loginModal">
+                <form> 
+                    <h1>Login</h1><br>
+                    Login: <input type="text"><br>
+                    Email: <input type="email"><br>
+                    Senha: <input type="password"><br>
+                    <button id="entrar" style="margin-top: 15px; display: none;" class="btnGames" type="submit">Entrar</button>
+                    <button id="cadastro" style="margin-top: 15px; display: none;" class="btnGames" type="submit">Cadastrar</button>
+                </form>
+            </div>            
         </div>
     </section>
 
