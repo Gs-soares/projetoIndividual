@@ -10,7 +10,6 @@ function openModal() {
     openLogin.style.width = '30%';
     openLogin.style.zIndex = '2';
     openLogin.style.position = 'fixed';
-
     openLogin.style.transform = 'translate(-50%, -50%)';
     openLogin.style.top = '50%';
     openLogin.style.left = '50%';
