@@ -10,16 +10,34 @@
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
 
+<section style="height: 0; display: none;" id="loginGames" class="modal">
+    <div>
+        <center><i style="margin-top: 30px;" class="far fa-user fa-5x"></i></center>
+
+        <form action="">
+            <div class="inLogin">
+                <p>Login:</p> <input type="text">
+            </div>
+            <div class="inSenha">
+                <p>Senha:</p> <input type="password">
+            </div>
+            <button class="btnLoginGames" id="entrar" type="submit">Login</button>
+        </form>
+        <center><button class="btnCloseModal" onclick="closeModal()"><i style="color: white;"
+                    class="far fa-times-circle fa-2x"></i></button></center>
+    </div>
+</section>
+
 <body>
     <header class="navbar">
         <div class="menu container">
             <ul>
-                <li><a href="projeto.html">Home</a></li>
-                <li><a href="projeto.html#space-title">Notícias</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#space-title">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
                 <li style="margin-left: 400px;"><a onclick="verificar()" href="#">Cadastro</a></li>
-                <li><a onclick="verificar()" href="#">Login</a></li>
+                <li><a onclick="openModal()" href="#">Login</a></li>
             </ul>
         </div>
     </header>
@@ -63,19 +81,5 @@
         </div>
     </section>
 </body>
-
-<section style="height: 0;" id="loginGames" class="modal">
-    <div>
-        <center><i style="margin-top: 30px;" class="far fa-user fa-5x"></i></center>
-        
-        <form action="">
-            <h3 style="font-weight: 100;">Login:</h3> <br><input type="text"><br>
-            <h3 style="font-weight: 100;">Email:</h3> <br><input type="email"><br>
-            <h3 style="font-weight: 100;">Senha:</h3> <br><input type="password"><br>
-            <button id="entrar" type="submit">Login</button>
-        </form>
-
-    </div>
-</section>
 
 </html>

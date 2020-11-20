@@ -1,13 +1,13 @@
 body{
     margin: 0px;
 }
-
 .container{
     width: 80%;
     margin: 0 auto;
     overflow: auto;
 }
 
+/* COMEÇO NAVBAR*/
 .navbar{
     background: rgb(40,120,189);
     background: linear-gradient(90deg, rgba(40,120,189,1) 0%, rgba(29,233,253,1) 50%, rgba(69,252,188,1) 100%);
@@ -16,7 +16,6 @@ body{
     font-size: 20px;
     position: fixed;
 }
-
 .menu ul{
     display: flex;
     margin-top: 40px;
@@ -27,15 +26,17 @@ body{
     text-decoration: none;
     color: white;
 }
+/* FIM DA NAVBAR */
 
-/* FIM DA NAV BAR */
-
+/* ESPAÇOS */
 #space{
     height: 100px;
 }
 #space-title{
     height: 100px;
 }
+/* ESPAÇOS */
+
 .btn{
     margin: 0px 0px 0px 400px;
     border-top: 1px solid #4b4b4b;
@@ -52,20 +53,17 @@ body{
 .btn:hover{
     cursor: pointer;
 }
-
 .conteudo{
     height: 84.9vh;
     background-color:rgb(29, 35, 41);
     clear: both;
 }
-
 .title{
     text-align: center;
     font-size: 40px;
     background-color:  rgb(29, 35, 41);
     color: white;
     padding: 15px;
-    /* border-bottom: 10%; */
 }.text{
     padding: 10PX;
     margin: 0px;
@@ -78,15 +76,12 @@ body{
     color: white;
     font-size: 18px;
 }
-
 .container-two{
     width: 70%;
-    /* margin-top: 2%; */
 }
 .notice-one{
     height: 65%;
     width: 47.5%;
-    /* border: 1px solid black; */
     float: left;
     margin: 15px 0px 0px 15px;
     text-align: center;
@@ -97,7 +92,6 @@ body{
 .notice-two{
     height: 65%;
     width: 47.5%;
-    /* border: 1px solid black; */
     float: right;
     margin: 15px 15px 0px 0px;
     text-align: center;
@@ -113,17 +107,13 @@ body{
     clear: both;
     margin-top: -43.5%;
 }
-
 .card{
     height: 120px;
-/* padding: 5px; */
     margin-bottom: 10px;
-    /* border: solid 1px white; */
     background-color:  rgb(64, 70, 77);
     border-radius: 10px;    
     
 }.card-left{
-    /* border: white solid 1px; */
     width: 28%;
     float: right;
     padding: 10px;
@@ -173,7 +163,7 @@ body{
 }
 /* FIM DAS NOTICIAS */
 
-/*FOOTER*/
+/* FOOTER */
 
 .footer{
     background-color: rgb(29, 35, 41);;
@@ -186,26 +176,23 @@ body{
     padding: 20px;
 }
 
+/* FOOTER */
+
 /* PAGINA GAMES*/
 
 .conteudoGames{
-    /* background-color: aquamarine; */
     height: 84.9vh;
 }
 
 .cardGames{
-    /* width: 100%; */
-    /* margin-left: 9%; */
     margin-top: 45px;
     display: flex;
-    /* margin: 0 auto; */
 }
 
 .cardGames div {
     height: 65vh;
     width: 50%;
     border-radius: 15px;
-    /* background-color: violet; */
     margin: 15px 20px 0px 20px;
     border: 2px solid black;
 }
@@ -242,36 +229,65 @@ body{
     cursor: pointer;
 }
 
+/* FIM DA PAGINA GAMES */
+
+/* COMEÇO DO MODAL */
 .modal{
     color: white;
 }
 
-#loginModal{
-    width: 100%;
-}
-
-.modal div{
-    width: 100%;
-}
-
 .modal form{
-    /* margin: 30px; */
     text-align: center;
-    width: 100%;
-    margin-top: 50px;
-}
+    margin-top: 10%;
+    z-index: 1;
+} 
 
-.modal form h3{
-    margin: 0px;
-}
-
-.modal form input{
-    /* padding: 8px; */
-    margin: 25px 0px;
+.modal input{
+    width: 300px;
+    height: 30px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     border-radius: 0px 0px 20px 0px;
+    margin-bottom: 10px;
     color: white;
-    width: 300px;
+}
+
+.inLogin p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.inSenha p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.btnLoginGames{
+    border-top: 1px solid #4b4b4b;
+    background: rgb(64, 70, 77);
+    padding: 5px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    margin-top: 8%;
+    margin-left: 37%;
+    margin-bottom: 24%;
+}
+
+.btnLoginGames:hover{
+    cursor: pointer;
+}
+
+.btnCloseModal{
+    background: transparent;
+    border: none;
+}
+
+.btnCloseModal:hover{
+    cursor: pointer;
 }

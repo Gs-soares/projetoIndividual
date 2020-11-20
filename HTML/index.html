@@ -10,21 +10,40 @@
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
 
+<section style="height: 0; display: none;" id="loginGames" class="modal">
+    <div>
+        <center><i style="margin-top: 30px;" class="far fa-user fa-5x"></i></center>
+
+        <form action="">
+            <div class="inLogin">
+                <p>Login:</p> <input type="text">
+            </div>
+            <div class="inSenha">
+                <p>Senha:</p> <input type="password">
+            </div>
+            <button class="btnLoginGames" id="entrar" type="submit">Login</button>
+        </form>
+        <center><button class="btnCloseModal" onclick="closeModal()"><i style="color: white;"
+                    class="far fa-times-circle fa-2x"></i></button></center>
+    </div>
+</section>
+
 <body>
     <header class="navbar">
         <div class="menu container">
             <ul>
-                <li><a href="projeto.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#space-title">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
                 <li style="margin-left: 400px;"><a onclick="verificar()" href="#">Cadastro</a></li>
-                <li><a onclick="verificar()" href="#">Login</a></li>
+                <li><a onclick="openModal()" href="#">Login</a></li>
             </ul>
         </div>
     </header>
 
     <div id="space"></div>
+
     <section class="conteudo">
         <div class="title">Últimas notícias</div>
         <section class="card-left">
@@ -70,7 +89,6 @@
             clear: both;
             text-align: center;
             margin-top: -6%;">
-                <button onclick="openModal()" class="btn">Saiba mais</button>
             </div>
         </section>
     </section>
@@ -125,21 +143,29 @@
             </button>
 
             <div id="loginModal">
-                <form> 
+                <form>
                     <h1>Login</h1><br>
                     Login: <input type="text"><br>
                     Email: <input type="email"><br>
                     Senha: <input type="password"><br>
-                    <button id="entrar" style="margin-top: 15px; display: none;" class="btnGames" type="submit">Entrar</button>
-                    <button id="cadastro" style="margin-top: 15px; display: none;" class="btnGames" type="submit">Cadastrar</button>
+                    <button id="entrar" style="margin-top: 15px; display: none;" class="btnGames"
+                        type="submit">Entrar</button>
+                    <button id="cadastro" style="margin-top: 15px; display: none;" class="btnGames"
+                        type="submit">Cadastrar</button>
                 </form>
-            </div>            
+            </div>
         </div>
     </section>
 
-    <section id="rodape" class="footer">
-        <div class="cont-footer">
+    <section style="display: flex;" id="rodape" class="footer">
+        <div style="width: 30%;">
+            <img style="border-radius: 50%; height: 200px;" src="https://upload.wikimedia.org/wikipedia/pt/9/96/Fall_Guys_capa.jpeg" alt="">
+        </div>
+        <div style="width: 40%;" class="cont-footer">
             Todos os direitos rezervados &COPY; 2020
+        </div>
+        <div style="width: 30%;">
+            <img style="border-radius: 50%; height: 200px;" src="https://upload.wikimedia.org/wikipedia/pt/9/96/Fall_Guys_capa.jpeg" alt="">
         </div>
     </section>
 </body>
